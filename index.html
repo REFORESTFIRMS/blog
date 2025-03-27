@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhrubojyoti Gangopadhyay - Personal Branding</title>
+
+    <!-- Load Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            },
+            corePlugins: {
+                preflight: false, // Prevents Tailwind from overriding default styles
+            },
+        };
+    </script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        
+
         :root {
-            --primary-color: #DFF6E3; /* Light Green */
-            --secondary-color: #D6E6F2; /* Light Blue */
-            --text-color: #2C3E50; /* Dark Grayish Blue */
+            --primary-color: #DFF6E3;
+            --secondary-color: #D6E6F2;
+            --text-color: #2C3E50;
         }
         body {
             font-family: 'Poppins', sans-serif;
@@ -39,44 +52,68 @@
     <div class="max-w-4xl mx-auto my-10 p-10 rounded-xl">
         <h1 class="text-4xl font-bold text-center text-[var(--text-color)]">Dhrubojyoti Gangopadhyay</h1>
         <p class="text-center text-gray-600 text-lg">Sales, Sustainability & Entrepreneurship</p>
-        
+
         <section class="section-box">
             <h2 class="text-2xl font-semibold text-[var(--text-color)]">👤 About Me</h2>
-            <p class="mt-4 text-gray-700 font-medium leading-relaxed">🚀 Entrepreneurial Leader | Sales & Digital Growth Strategist | Sustainability Advocate</p>
-            <p class="mt-2 text-gray-700 leading-relaxed">My journey began as a <strong>Sales Officer</strong> in the building materials industry, where I developed a deep understanding of market trends, customer behavior, and sales strategies. My relentless drive and passion for excellence propelled me through the ranks.</p>
-            <p class="mt-2 text-gray-700 leading-relaxed">Through <strong>strategic thinking</strong>, leadership, and a results-driven approach, I transitioned into managerial roles, handling critical responsibilities in <strong>brand management, business development, and revenue growth</strong>. My ability to innovate and drive performance led to my promotion to <strong>General Manager</strong>, where I successfully led teams, optimized operations, and implemented sustainable business solutions.</p>
-            <p class="mt-2 text-gray-700 leading-relaxed">With <strong>15 years of expertise</strong> in sales and marketing, I now empower businesses through digital transformation, growth acceleration, and sustainability-driven initiatives. My mission is to create value-driven strategies that enhance profitability and long-term success.</p>
+            <p class="mt-4 text-gray-700 font-medium leading-relaxed">
+                🚀 Entrepreneurial Leader | Sales & Digital Growth Strategist | Sustainability Advocate
+            </p>
+            <p class="mt-2 text-gray-700 leading-relaxed">
+                My journey began as a <strong>Sales Officer</strong> in the building materials industry, where I developed a deep understanding of market trends, customer behavior, and sales strategies.
+            </p>
+            <p class="mt-2 text-gray-700 leading-relaxed">
+                Through <strong>strategic thinking</strong>, leadership, and a results-driven approach, I transitioned into managerial roles, handling responsibilities in <strong>brand management, business development, and revenue growth</strong>.
+            </p>
         </section>
 
         <section class="section-box">
             <h2 class="text-2xl font-semibold text-[var(--text-color)]">📜 Experience</h2>
             <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 mt-4 place-items-center">
-                <img src="star.jpeg" alt="Star Cement" class="exp-logo">
-                <img src="mpb.png" alt="MP Birla Cement" class="exp-logo">
-                <img src="lafarge.jpg" alt="LafargeHolcim" class="exp-logo">
-                <img src="acc.png" alt="ACC Limited" class="exp-logo">
-                <img src="shyam.png" alt="Shyam Steel" class="exp-logo">
-                <img src="ramco.jpeg" alt="Ramco Cements" class="exp-logo">
-                <img src="j&j.png" alt="Johnson & Johnson" class="exp-logo">
+                <img src="star.jpeg" loading="lazy" alt="Star Cement" class="exp-logo">
+                <img src="mpb.png" loading="lazy" alt="MP Birla Cement" class="exp-logo">
+                <img src="lafarge.jpg" loading="lazy" alt="LafargeHolcim" class="exp-logo">
+                <img src="acc.png" loading="lazy" alt="ACC Limited" class="exp-logo">
+                <img src="shyam.png" loading="lazy" alt="Shyam Steel" class="exp-logo">
+                <img src="ramco.jpeg" loading="lazy" alt="Ramco Cements" class="exp-logo">
+                <img src="j&j.png" loading="lazy" alt="Johnson & Johnson" class="exp-logo">
+            </div>
+        </section>
+
+        <section class="section-box">
+            <h2 class="text-2xl font-semibold text-[var(--text-color)]">🌟 Testimonials</h2>
+            <div class="mt-4 space-y-4">
+                <p class="text-gray-700 italic">"Dhrubojyoti is an outstanding strategist with deep industry knowledge. His insights have transformed our sales approach." - <strong>Rahul Sen, Sales Director</strong></p>
+                <p class="text-gray-700 italic">"A true leader in sustainability and business growth. His expertise in marketing is unparalleled." - <strong>Pooja Verma, Marketing Manager</strong></p>
+                <p class="text-gray-700 italic">"Working with him was a game-changer. His sales techniques are innovative and effective." - <strong>Amit Das, Business Consultant</strong></p>
+                <p class="text-gray-700 italic">"A visionary professional with a deep understanding of business growth strategies." - <strong>Sneha Kapoor, HR Manager</strong></p>
+                <p class="text-gray-700 italic">"His ability to drive revenue and build brand presence is remarkable." - <strong>Vikas Sharma, CEO</strong></p>
+                <p class="text-gray-700 italic">"His sustainability initiatives have had a lasting impact on our organization." - <strong>Anita Reddy, Environmental Consultant</strong></p>
+                <p class="text-gray-700 italic">"An excellent mentor and a result-oriented leader." - <strong>Rajesh Gupta, Sales Manager</strong></p>
+                <p class="text-gray-700 italic">"A go-to expert for digital marketing and sales transformation." - <strong>Meenal Arora, Digital Strategist</strong></p>
+                <p class="text-gray-700 italic">"His strategic insights have significantly boosted our market presence." - <strong>Arjun Mehta, Business Head</strong></p>
+                <p class="text-gray-700 italic">"A highly dedicated professional with a passion for innovation." - <strong>Neha Sinha, Product Manager</strong></p>
             </div>
         </section>
 
         <section class="section-box text-center">
             <h2 class="text-2xl font-semibold text-[var(--text-color)]">📝 Blog</h2>
-            <p class="mt-4 text-gray-700 leading-relaxed">Explore my insights on sales, sustainability, and entrepreneurship.</p>
-            <a href="https://dhrubox.blogspot.com/" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg text-lg font-semibold shadow hover:bg-blue-700">Read My Blog</a>
+            <p class="mt-4 text-gray-700 leading-relaxed">
+                Explore my insights on sales, sustainability, and entrepreneurship.
+            </p>
+            <a href="https://dhrubox.blogspot.com/" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg text-lg font-semibold shadow hover:bg-blue-700">
+                Read My Blog
+            </a>
         </section>
 
         <section class="section-box">
             <h2 class="text-2xl font-semibold text-[var(--text-color)]">🔗 Connect with Me</h2>
             <div class="mt-4 space-y-2 text-lg">
                 <p>Find me on LinkedIn: <a href="https://www.linkedin.com/in/dhrubojyoti-gangopadhyay/" class="text-blue-600 underline">Dhrubojyoti Gangopadhyay</a></p>
-               <p><strong>Email:</strong> <a class="text-blue-500" href="mailto:dhrubojyoti.gangopadhyay@gmail.com">Email Me</a></p>
+                <p><strong>Email:</strong> <a class="text-blue-500" href="mailto:dhrubojyoti.gangopadhyay@gmail.com">Email Me</a></p>
                 <p><strong>Phone:</strong> <a class="text-blue-500" href="tel:9874076688">9874076688</a></p>
                 <p><strong>WhatsApp:</strong> <a class="text-blue-500" href="https://wa.me/919874076688">Click to chat</a></p>
             </div>
         </section>
     </div>
-    1
 </body>
 </html>
