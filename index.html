@@ -18,14 +18,13 @@
     <title>Dhrubojyoti Gangopadhyay - Personal Branding</title>
 
    <link rel="manifest" href="/manifest.json">
-<script>
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-    .then(() => console.log("Service Worker Registered"))
-    .catch(error => console.log("Service Worker Registration Failed:", error));
-}
-</script>
-
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(() => console.log("Service Worker Registered"))
+                .catch(error => console.log("Service Worker Registration Failed:", error));
+        }
+    </script>
 
    
 </head>
