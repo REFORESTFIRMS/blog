@@ -1,0 +1,43 @@
+/* Apply styles to the entire page */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a clean, modern font */
+    background: linear-gradient(to right, #E8F6E8, #F4FBF4); /* Very light green gradient */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style for heading */
+h1 {
+    color: #4CAF50; /* Green color for text */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Style for a container (optional) */
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+/* Button style */
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
